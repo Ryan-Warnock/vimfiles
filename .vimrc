@@ -3,7 +3,9 @@ syntax on
 "A colourscheme I have modified to have no colours. I find it much easier to work with.
 "Only comments are different because they are a darker shade.
 "If you haven't, you should at least try working without any coloured syntax highlighting.
+set t_Co=256
 colorscheme lucius
+set bg=dark
 "bunch of normal settings that don't really need explaining
 set number
 set autoindent
@@ -37,7 +39,7 @@ inoremap <C-[> {<CR>}<Esc>O<Tab><Esc>
 "let g:syntastic_rust_checkers = ['rustc']
 
 "YouCompleteMe rust completion
-"let g:ycm_rust_src_path = '/home/lebronse/Programming/Rust/.rust_src/rust/src'
+let g:ycm_rust_src_path = '/home/lebronse/Programming/Rust/.rust_src/rust/src'
 
 "Tab switching
 noremap L gt
@@ -60,8 +62,8 @@ let mapleader=" "
 
 "YouCompleteMe
 "GoTo
-"nnoremap <C-]> :YcmCompleter GoTo<CR>
-"inoremap <C-]> <Esc>:YcmCompleter GoTo<CR>
+nnoremap <C-]> :YcmCompleter GoTo<CR>
+inoremap <C-]> <Esc>:YcmCompleter GoTo<CR>
 
 "comfortable-motion. The smooth visual movement makes it easier to track
 "your movements.
